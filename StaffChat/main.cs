@@ -6,11 +6,11 @@ using System.Text;
 using System.Linq;
 using System.Reflection;
 using TerrariaApi.Server;
-using System.Collections.Generic;
+using Microsoft.Xna.Framework;
 
 namespace StaffChatPlugin
 {
-	[ApiVersion(1, 20)]
+    [ApiVersion(2, 1)]
 	public class StaffChat : TerrariaPlugin
 	{
 		public static bool[] Spying = new bool[255];
