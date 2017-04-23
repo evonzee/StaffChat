@@ -88,8 +88,12 @@ namespace StaffChatPlugin
 
 		public void OnLeave(LeaveEventArgs e)
 		{
-			Spying[e.Who] = false;
-			InStaffChat[e.Who] = false;
+            try
+            {
+                Spying[e.Who] = false;
+                InStaffChat[e.Who] = false;
+            }
+            catch { }
 		}
 
 		private void StaffChat_Chat(CommandArgs args)
